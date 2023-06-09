@@ -9,10 +9,12 @@ import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.tooling.preview.Preview
 import dev.anmatolay.artistarchivist.ui.theme.ArtistArchivistTheme
+import dev.anmatolay.artistarchivist.ui.util.FontScalePreviews
+import dev.anmatolay.artistarchivist.ui.util.UIModePreviews
 
 class MainActivity : ComponentActivity() {
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
@@ -34,7 +36,8 @@ fun Greeting(name: String, modifier: Modifier = Modifier) {
     )
 }
 
-@Preview(showBackground = true)
+@UIModePreviews
+@FontScalePreviews
 @Composable
 fun GreetingPreview() {
     ArtistArchivistTheme {
