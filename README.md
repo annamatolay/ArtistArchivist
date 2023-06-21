@@ -35,9 +35,13 @@ This is my first completely Compose app, an artist finder, that was built for DI
 
 ## Disclaimer
 
-This section is all about what could have been if I don't get stuck with Compose or Coroutines, prioritized better, or don't get sick... However, I'm very grateful for this task because I finally could truly deep dive into Compose and try Coroutines for the first time.
+This section is all about what could have been if I don't get stuck with Compose or Coroutines, prioritized better, or don't get sick... **However, I'm very grateful for this task because I finally could truly deep dive into Compose and try Coroutines for the first time.**
 
 Modularisation and testing are not finished. In both of the cases, I have more progress than I pushed here but didn't want to share broken code. However, I feel I need to share my thoughts.
+
+#### Version controll 
+
+I followed [Conventional Commits](https://cheatography.com/albelop/cheat-sheets/conventional-commits/), but if you check the history I basically pushed most of my work in one commit. I never do something like that if I'm working in a team. But even if I'm working on a pet project. This is an exception. If you interested how I mannaging version controll I suggest you to check the [commit history](https://github.com/annamatolay/lirael-android/commits/main) of my most recent pet project.
 
 #### Modularisation 
 
@@ -60,3 +64,20 @@ These would have been my modules:
 Occasional crashes when the app is in the background. It's throwing `java.lang.IllegalStateException: Check failed.` because of how I'm handling saved states for Compose views. I tried to figure it out, but couldn't so far. I mostly got suggestions on how to handle Coroutine dispatcher, but I'm already doing it like that. The issue is also not consistently reproducible too.
 
 ### Lesson learned
+
+1. **Start with way simpler UI, especially if the framework relatively new.**<p>
+I spent too much with animating my views and the end result was nearly as satisfying.<br>
+I got really stuck with the different Bottom sheets. First I tried the `BottomSheetScaffold` which is quite difficult to hide. Then went with `ModalBottomSheet` which I also failed to successfully implement. After all, I basically created a card on top of everything that was way easier. I should have gone with that first and made it fancier if I have time.
+
+2. **Write tests frequently, even if it's a small project.**<p>
+One of my strongest is testing. During all my previous job I had done at least one outstanding change regarding testing (first team to having automated tests with CI/CD flow, laying down Android UI testing, or introducing a better alternative for Espresso).<br>
+And now here I am with basically nothing (and some broken UI tests locally) because I spent too much on UI implementation and also Compose testing is a bit different.<br>
+I could at least write some unit tests for the usecase, repository, etc.
+
+
+4. **Don't add more new libraries that you are not familiar with if you already have new things on your plate.**<p>
+I did Koin with Annotations the first time because I thought it was fun and more similar to Dagger (from the outside). It was fun, but also I got a little difficulty with that. That's usually okay, but not when I'm already behind my schedule and actually need to write UI in a completely new way and use something for async communication that I only now from articles.
+
+---
+
+Thank you for reading that and I hope somewhat you liked my solution at least. I don't, but at least learned a a lot and will complete this project regardless of the outcome of my submission (I won't push any changes until I get a review from you).
