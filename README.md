@@ -18,7 +18,6 @@ This is my first completely Compose app, an artist finder, that was built for DI
 ###### Dynamic theme
 <img src="https://github.com/annamatolay/ArtistArchivist/assets/19217964/8e3c838d-05f4-465d-ad8a-38d2b8f7e0f5" width="240">
 <img src="https://github.com/annamatolay/ArtistArchivist/assets/19217964/164a698c-623e-4c5d-8713-3ca939dbff52" width="240">
-<img src="https://github.com/annamatolay/ArtistArchivist/assets/19217964/7d990017-d4ac-443b-be0c-71165fb251aa" width="240">
 <img src="https://github.com/annamatolay/ArtistArchivist/assets/19217964/063902ca-6331-4d4b-a52f-7625b13eb19f" width="240">
 
 ## Features & Dependencies
