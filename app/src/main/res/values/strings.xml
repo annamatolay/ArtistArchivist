@@ -1,3 +1,28 @@
 <resources>
-    <string name="app_name">ArtistArchivist</string>
+    <!--  Only search view  -->
+    <string name="search_input_label">Search artist or band</string>
+    <string name="search_input_placeholder">Special characters are not allowed!</string>
+    <string name="search_error_input">Invalid input!</string>
+    <string name="search_error_api">Failed to connect with the sever. Please, try again!</string>
+    <string name="search_error_default">Something went wrong!</string>
+    <plurals name="search_item_count">
+        <item quantity="one">%d result</item>
+        <item quantity="other">%d results</item>
+    </plurals>
+    <!--  Result view and details view -->
+    <string name="common_title_name_sort">Sort name:&#160;</string>
+    <string name="common_title_tags">Tag(s):&#160;</string>
+    <!--  Only result view  -->
+    <string name="result_title_name">Name:&#160;</string>
+    <string name="result_title_type">Type:&#160;</string>
+    <string name="result_title_gender">Gender:&#160;</string>
+    <string name="result_title_country">Country:&#160;</string>
+    <string name="result_title_disambiguation">Disambiguation:&#160;</string>
+    <!--  Only details view  -->
+    <string name="details_body_lifespan">(%s - %s)&#160;</string>
+    <string name="details_title_aliases">Aliases:&#160;</string>
+    <string name="details_title_origin">Origin:&#160;</string>
+    <string name="details_title_isni">ISNI code:&#160;</string>
+    <string name="details_button_close">Close</string>
+    <string name="details_error_defailt">Something went wrong, details not available!</string>
 </resources>
